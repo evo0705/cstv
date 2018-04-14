@@ -1,0 +1,51 @@
+{
+  "extends": "enact/strict",
+  "env": {
+    "browser": true
+  },
+  "globals": {
+    "fetch": true,
+    "Headers": true
+  },
+  "rules": {
+    "quotes": [
+      "error",
+      "double"
+    ],
+    "semi": 0,
+    "comma-dangle": [
+      "error",
+      {
+        "arrays": "only-multiline",
+        "objects": "only-multiline",
+        "imports": "never",
+        "exports": "never",
+        "functions": "ignore"
+      }
+    ],
+    "react/jsx-indent": "off",
+    "react/jsx-tag-spacing": {
+      "closingSlash": "never",
+      "beforeSelfClosing": "always",
+      "afterOpening": "never",
+      "beforeClosing": "allow"
+    },
+    "react/jsx-no-bind": [
+      "off",
+      {}
+    ],
+    "object-curly-spacing": [
+      1,
+      "always"
+    ],
+    "babel/object-curly-spacing": [
+      1,
+      "always"
+    ],
+    "indent": "off",
+    "no-tabs": 0,
+    "space-before-function-paren": 0,
+    "linebreak-style": 0,
+    "no-undef": 0
+  }
+}
