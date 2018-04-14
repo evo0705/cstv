@@ -13,8 +13,7 @@
     "license": "enact license",
     "test": "enact test start --single-run",
     "test-watch": "enact test start",
-    "start": "",
-    "build": "enact pack -p",
+    "build": "enact pack -p"
   },
   "license": "UNLICENSED",
   "private": true,
