@@ -1,0 +1,11 @@
+{
+	"id": "com.samuellee.cstv",
+	"title": "CStv",
+	"version": "1.0.0",
+	"type": "web",
+	"main": "index.html",
+	"icon": "icon.png",
+	"miniIcon": "icon-mini.png",
+	"largeIcon": "icon-large.png",
+	"uiRevision": 2
+}

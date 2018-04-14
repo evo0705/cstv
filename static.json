@@ -3,5 +3,10 @@
   "routes": {
     "/**": "index.html"
   },
+  "headers": {
+    "/**": {
+      "Access-Control-Allow-Origin": "*"
+    }
+  },
   "https_only": true
 }
