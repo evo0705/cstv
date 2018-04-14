@@ -5,9 +5,9 @@
   "author": "Samuel Lee",
   "main": "src/index.js",
   "scripts": {
-    "serve": "enact serve",
-    "pack": "enact pack",
-    "pack-p": "enact pack -p",
+    "start": "enact serve",
+    "build": "enact pack -p",
+    "build-dev": "enact pack",
     "watch": "enact pack --watch --verbose",
     "clean": "enact clean",
     "lint": "enact lint --framework",
