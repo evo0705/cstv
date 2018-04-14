@@ -14,7 +14,8 @@
     "test": "enact test start --single-run",
     "test-watch": "enact test start",
     "build": "rm -rf ./dist; enact pack -p",
-    "build-win32": "rmdir /s /q dist && enact pack -p"
+    "build-win32": "rmdir /s /q dist && enact pack -p",
+    "heroku-postbuild": "enact pack -p"
   },
   "license": "UNLICENSED",
   "private": true,
