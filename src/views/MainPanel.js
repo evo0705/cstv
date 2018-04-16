@@ -20,7 +20,7 @@ export default class MainPanels extends React.Component {
   componentWillMount() {
     const { panels } = this.state
     panels.push(<Panel key="cstv">
-      <Header title="CSTV" titleBelow="A video player which playing podcast and media feed base on RSS."/>
+      <Header title="CSTV" titleBelow="RSS Video Player for LG webosTV 4.0"/>
         <RssChannel items={[{
           title:       "myrss.nu/drama",
           description: "http://myrss.nu/drama",
