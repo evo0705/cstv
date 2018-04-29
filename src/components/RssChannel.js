@@ -48,12 +48,19 @@ export default class RssChannel extends React.Component {
         break
       }
       case "video/mp4":
+        this.props.onStopLoading()
+        this.props.onPushPanel(<Panel>
+          <VideoPlayer title={title}>
+            <source src={_url} type={_type}/>
+          </VideoPlayer>
+        </Panel>)
+        break
       case "video/html":
         this.props.onStopLoading()
         this.props.onPushPanel(<Panel>
-            <VideoPlayer title={title}>
-              <source src={_url} type={_type}/>
-            </VideoPlayer>
+          <iframe src={_url} style={{
+            position: "fixed", top: "0px", width: "100%", height: "100%", border: "none",
+          }}></iframe>
         </Panel>)
         break
       default:
@@ -73,7 +80,8 @@ export default class RssChannel extends React.Component {
   }
 
   render() {
-    const itemsToRender = this.props.items.map(item => <Item key={item._url} onClick={() => this.handleItemClicked(item)}>
+    const itemsToRender = this.props.items.map(item => <Item key={item._url}
+                                                             onClick={() => this.handleItemClicked(item)}>
       <BodyText>{item.title}</BodyText>
     </Item>)
 
