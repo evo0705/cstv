@@ -58,7 +58,7 @@ export default class RssChannel extends React.Component {
       case "video/html":
         this.props.onStopLoading()
         this.props.onPushPanel(<Panel>
-          <iframe src={_url} style={{
+          <iframe src={"https" + _url.substring(4)} style={{
             position: "fixed", top: "0px", width: "100%", height: "100%", border: "none",
           }}></iframe>
         </Panel>)
